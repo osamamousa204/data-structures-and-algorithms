@@ -4,7 +4,7 @@
 
 **challenge Name**                   | *Links*
 -------------------------------------|-------------------------------------------
-Reverse Array                        |[Reverse Array](#/class-02)
+Reverse Array                        |[Reverse Array](https://github.com/osamamousa204/data-structures-and-algorithms/pull/1)
 -------------------------------------|-------------------------------------------
 
 
