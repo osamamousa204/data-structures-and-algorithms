@@ -11,4 +11,4 @@ will, i declared a new array then
 
 ## Solution
 <!-- Embedded whiteboard image -->
-![array-reverse](./assets/array-reverse.png)
+![array-reverse](../assets/array-reverse.png)
