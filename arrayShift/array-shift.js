@@ -1,4 +1,3 @@
-// eslint-disable-next-line no-unused-vars
 function insertShiftArray(arr,num){
   let checkNumOddEven;
   let arrResult = [];
@@ -20,3 +19,4 @@ function insertShiftArray(arr,num){
   }
   return arrResult;
 }
+module.exports = insertShiftArray;
