@@ -15,9 +15,9 @@ describe('linkList Module', () => {
     expect(numbers.head.value).toEqual(init);
   });
   it('Can properly insert multiple nodes into the linked list', () => {
-    expect(numbers.insert(second)).toEqual({ head:  { value: 5, next: { value: 10, next: null } } });
-    expect(numbers.head.value).toEqual(init);
-    expect(numbers.head.next.value).toEqual(second);
+    expect(numbers.insert(second)).toEqual({ head:  { value: 10, next: { value: 5, next: null } } });
+    expect(numbers.head.value).toEqual(second);
+    expect(numbers.head.next.value).toEqual(init);
   });
   it('Will return true when finding a value within the linked list that exists', () => {
     expect(numbers.includes(second)).toBeTruthy();
@@ -26,6 +26,6 @@ describe('linkList Module', () => {
     expect(numbers.includes(25)).toBeFalsy();
   });
   it('Can properly return a collection of all the values that exist in the linked list', () => {
-    expect(numbers.toString()).toEqual(`{ ${init} } -> { ${second} } -> null`);
+    expect(numbers.toString()).toEqual(`{ ${second} } -> { ${init} } -> null`);
   });
 });
