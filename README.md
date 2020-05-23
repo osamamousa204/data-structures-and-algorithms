@@ -10,6 +10,9 @@ Array Shift               |[Array Shift](https://github.com/osamamousa204/data-s
 --------------------------|-------------------------------------------
 Array-binary-search       |[Array-binary-search](https://github.com/osamamousa204/data-structures-and-algorithms/pull/3)
 --------------------------|-------------------------------------------
+Linked list               | [Linked list](https://github.com/osamamousa204/data-structures-and-algorithms/pull/5)
+--------------------------|-------------------------------------------
+
 
 
  
