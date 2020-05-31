@@ -5,11 +5,27 @@ class Node {
     this.next = null;
   }
 }
-  
 class LinkedList {
   constructor(){
     this.head = null;
   }
+  //=========(append)=========\\
+  append(value){
+    if(value){
+      let node = new Node(value);
+      if(!this.head){
+        this.head = node;
+        return this;
+      }
+      let current = this.head;
+      while(current.next){
+        current = current.next;
+      }
+      current.next = node;
+      return this;
+    }
+  }
+  //=========(insert)=========\\
   insert(value){
     if(value){
       let node = new Node(value);
@@ -23,6 +39,62 @@ class LinkedList {
       return this;
     }
   }
+  //=========(insertBefore)=========\\
+  insertBefore(value, newVal){
+    if(value && newVal){
+      let node = new Node(newVal);
+      if(this.head.value === value){
+        let  current = this.head;
+        this.head = node;
+        this.head.next = current;
+        return this;
+      }else{
+        let  current = this.head;
+        let prevCurrent = current;
+        while(current.next){
+          current = current.next;
+          let lastCurrent = current;
+          if(current.value === value){
+            prevCurrent.next = node;
+            prevCurrent.next.next = lastCurrent;
+            return this;
+          }
+          prevCurrent = lastCurrent;
+        }
+      }
+    }else{
+      return 'you should insert a value and a new value';
+    }
+  }
+  //=========(insertAfter)=========\\
+  insertAfter(value, newVal){
+    if(value && newVal){
+      let node = new Node(newVal);
+      if(this.head.value === value){
+        let item = this.head.next;
+        let  current = this.head;
+        current.next = node;
+        current.next.next = item;
+        return this;
+      }else{
+        let  current = this.head;
+        while(current.next){
+          current = current.next;
+          if(current.value === value){
+            let item =   current.next;
+            current.next = node;
+            current.next.next = item;
+            return this;
+          }
+        }
+      }
+    }else{
+      return 'you should insert a value and a new value';
+    }
+  }
+
+  //=========(includes)=========\\
+
   includes(checkValue){
     let bool = false;
     let current = this.head;
@@ -40,6 +112,9 @@ class LinkedList {
       return bool;
     }
   }
+
+  //=========(toString)=========\\
+
   toString(){
     let current = this.head;
     let allValuesInLinkList = `{ ${current.value} }`;
@@ -50,6 +125,7 @@ class LinkedList {
     return allValuesInLinkList + ' -> null';
   }
 }
+
 linkList.Node = Node;
 linkList.LinkedList = LinkedList;
 module.exports = linkList;
