@@ -1,4 +1,4 @@
-# Reverse an Array
+# Linked list
 <!-- Short summary or background information -->
 graduate 301 student has a knowlodge in js language
 ## Challenge
@@ -24,8 +24,26 @@ creating a class named node and another one called linkedlist which has a constr
     `allValuesInLinkList` variable then return it.
 
 ### the Big O is Big O Of(n)
+#### `insert(value)`
+- time: Big O Of(1)
+- space: Big O Of(3)
+#### `append(value)`
+- time: Big O Of(n)
+- space: Big O Of(3)
+#### `insertBefore(value,newValue)`
+- time: Big O Of(n)
+- space: Big O Of(5)
+#### `insertAfter(value,newValue)`
+- time: Big O Of(n)
+- space: Big O Of(5)
+#### `includes(value)`
+- time: Big O Of(n)
+- space: Big O Of(2)
+#### `toString()`
+- time: Big O Of(n)
+- space: Big O Of(2)
 ## Solution
 <!-- Embedded whiteboard image -->
-![array-reverse](../../assets/linked-list.png)
+![array-reverse](../../assets/linked-list2.png)
 
 
