@@ -60,4 +60,27 @@ describe('linkList Module', () => {
   it('Can successfully insert a node after the last node of the linked list', () => {
     expect(numbers.insertAfter(9,30)).toEqual({ head: { value: 1, next: { value: 10, next: { value: 5, next: { value: 15, next: { value: 27, next: { value: 3, next: { value: 9, next: { value: 30, next: null } } } } } } } }  });
   });
+
+  it('Where k is greater than the length of the linked list', () => {
+    expect(numbers.kthFromEnd(20)).toEqual('this value begger than the length of the ll');
+  });
+
+  it('Where k and the length of the list are the same', () => {
+    expect(numbers.kthFromEnd(8)).toEqual(1);
+  });
+
+  it('Where k is not a positive integer', () => {
+    expect(numbers.kthFromEnd(-8)).toEqual('only positive numbers are acceptable');
+  });
+
+  it('Where the linked list is of a size 1', () => {
+    const newNumbers = new linkList.LinkedList();
+    newNumbers.append(9);
+    expect(newNumbers.kthFromEnd(1)).toEqual(9);
+  });
+
+  it('where k is not at the end, but somewhere in the middle of the linked list', () => {
+    expect(numbers.kthFromEnd(5)).toEqual(15);
+  });
+
 });
