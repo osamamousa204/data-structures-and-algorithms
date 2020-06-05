@@ -66,7 +66,7 @@ describe('linkList Module', () => {
   });
 
   it('Where k and the length of the list are the same', () => {
-    expect(numbers.kthFromEnd(8)).toEqual(1);
+    expect(numbers.kthFromEnd(7)).toEqual(1);
   });
 
   it('Where k is not a positive integer', () => {
@@ -76,11 +76,11 @@ describe('linkList Module', () => {
   it('Where the linked list is of a size 1', () => {
     const newNumbers = new linkList.LinkedList();
     newNumbers.append(9);
-    expect(newNumbers.kthFromEnd(1)).toEqual(9);
+    expect(newNumbers.kthFromEnd(0)).toEqual(9);
   });
 
   it('where k is not at the end, but somewhere in the middle of the linked list', () => {
-    expect(numbers.kthFromEnd(5)).toEqual(15);
+    expect(numbers.kthFromEnd(5)).toEqual(5);
   });
 
 });

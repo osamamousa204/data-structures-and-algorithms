@@ -137,6 +137,9 @@ class LinkedList {
   //===========(kthFromEnd(k))========\\
 
   kthFromEnd(k){
+    if(!this.head){
+      return 'the linked list is empty';
+    }
     let allNodes = [];
     allNodes[0] = this.head;
     let current = this.head;
@@ -146,14 +149,14 @@ class LinkedList {
       allNodes[i] = current;
       i++;
     }
-    if(k > allNodes.length ){
+    if(k >= allNodes.length ){
       return 'this value begger than the length of the ll';
-    }else if(k <= 0 ){
+    }else if(k < 0 ){
       return 'only positive numbers are acceptable';
     }else if(typeof (k) != 'number'){
       return 'only  numbers are acceptable';
     }else{
-      return allNodes[allNodes.length  - k].value;
+      return allNodes[allNodes.length -1  - k].value;
     }
   }
 }
