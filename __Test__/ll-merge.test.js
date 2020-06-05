@@ -10,7 +10,7 @@ describe('llMerge Module test', () => {
   strings.append('o');
   strings.append('y');
   it('“Happy Path” - it will merge tow LinkedLists', () => {
-    expect(llMerge(numbers,strings)).toEqual({ head:  { value: 4, next: { value: 12, next: { value: 'o', next: { value: 'y', next: null } } } } });
+    expect(llMerge(numbers,strings)).toEqual({ head:  { value: 4, next: { value: 'o', next: { value: 12, next: { value: 'y', next: null } } } } });
   });
   it('expectable faliar', () => {
     expect(llMerge(numbers)).toEqual('you should input tow linkedlist');

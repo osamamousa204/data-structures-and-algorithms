@@ -2,7 +2,7 @@ const LinkedList = require('../linkedList/linked-List.js');
 
 function mergeLists (ll1,ll2){
   if(ll1 && ll2){
-    let mergedNode = new LinkedList();
+    let mergedNode = new LinkedList.LinkedList();
     if(ll1.head.value){
       mergedNode.append(ll1.head.value);
     }
@@ -21,7 +21,7 @@ function mergeLists (ll1,ll2){
         mergedNode.append(current2.value);
       }
     }
-    return mergedNode.toString();
+    return mergedNode;
   }else{
     return 'you should input tow linkedlist';
   }
