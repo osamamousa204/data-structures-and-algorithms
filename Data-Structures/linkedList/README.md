@@ -22,28 +22,32 @@ creating a class named node and another one called linkedlist which has a constr
  5. used the `toString()` method to return a string with this format "{ a } -> { b } -> { c } -> NULL"
     * create a new variable named `allValuesInLinkList` and the initial value is the head value (this variable is string using concatination)and enters a while loop to take all the values inside the link-list and concatinate it with the 
     `allValuesInLinkList` variable then return it.
+6. used the `kthFromEnd()` method to return kth node value in the ll.
 
 ### the Big O is Big O Of(n)
 #### `insert(value)`
 - time: Big O Of(1)
-- space: Big O Of(3)
+- space: Big O Of(1)
 #### `append(value)`
 - time: Big O Of(n)
-- space: Big O Of(3)
+- space: Big O Of(1)
 #### `insertBefore(value,newValue)`
 - time: Big O Of(n)
-- space: Big O Of(5)
+- space: Big O Of(1)
 #### `insertAfter(value,newValue)`
 - time: Big O Of(n)
-- space: Big O Of(5)
+- space: Big O Of(1)
 #### `includes(value)`
 - time: Big O Of(n)
-- space: Big O Of(2)
+- space: Big O Of(1)
 #### `toString()`
 - time: Big O Of(n)
-- space: Big O Of(2)
+- space: Big O Of(1)
+#### `kthFromEnd()`
+- time: Big O Of(n)
+- space: Big O Of(n)
 ## Solution
 <!-- Embedded whiteboard image -->
-![array-reverse](../../assets/linked-list2.png)
+![array-reverse](../../assets/linked-list3.png)
 
 

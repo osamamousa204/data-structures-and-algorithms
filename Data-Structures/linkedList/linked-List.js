@@ -5,11 +5,14 @@ class Node {
     this.next = null;
   }
 }
+  
 class LinkedList {
   constructor(){
     this.head = null;
   }
+
   //=========(append)=========\\
+
   append(value){
     if(value){
       let node = new Node(value);
@@ -25,7 +28,9 @@ class LinkedList {
       return this;
     }
   }
+
   //=========(insert)=========\\
+
   insert(value){
     if(value){
       let node = new Node(value);
@@ -39,7 +44,9 @@ class LinkedList {
       return this;
     }
   }
+
   //=========(insertBefore)=========\\
+
   insertBefore(value, newVal){
     if(value && newVal){
       let node = new Node(newVal);
@@ -61,11 +68,13 @@ class LinkedList {
           }
           prevCurrent = lastCurrent;
         }
+        return 'Exception';
       }
     }else{
       return 'you should insert a value and a new value';
     }
   }
+
   //=========(insertAfter)=========\\
   insertAfter(value, newVal){
     if(value && newVal){
@@ -124,7 +133,34 @@ class LinkedList {
     }
     return allValuesInLinkList + ' -> null';
   }
+
+  //===========(kthFromEnd(k))========\\
+
+  kthFromEnd(k){
+    if(!this.head){
+      return 'the linked list is empty';
+    }
+    let allNodes = [];
+    allNodes[0] = this.head;
+    let current = this.head;
+    let i = 1;
+    while(current.next){
+      current =  current.next;
+      allNodes[i] = current;
+      i++;
+    }
+    if(k >= allNodes.length ){
+      return 'this value begger than the length of the ll';
+    }else if(k < 0 ){
+      return 'only positive numbers are acceptable';
+    }else if(typeof (k) != 'number'){
+      return 'only  numbers are acceptable';
+    }else{
+      return allNodes[allNodes.length -1  - k].value;
+    }
+  }
 }
+
 
 linkList.Node = Node;
 linkList.LinkedList = LinkedList;
