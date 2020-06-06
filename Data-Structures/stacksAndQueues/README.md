@@ -1,4 +1,4 @@
-# Linked list
+# stack and Queue
 <!-- Short summary or background information -->
 graduate 301 student has a knowlodge in js language
 ## Challenge
