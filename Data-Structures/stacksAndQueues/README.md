@@ -27,12 +27,13 @@ graduate 301 student has a knowlodge in js language
  - for the `pop` i used a built in methode called `shift` to remove the node located in the top of the stack and return its value
  - for the `peak` i  returned the value of the node located on the top
   - for the `isEmpty` i  returned bolean value if the stack empty or not
+  
 **Queue class**
  - for the `enqueue` i used a built in methode called `push` to add a new node to the stack and assigned the new node to the `front` property
  - for the `dequeue` i used a built in methode called `shift`to remove the node located in the `front` of the stack and return its value
  - for the `peak` i  returned the value of the node located on the `front`
   - for the `isEmpty` i  returned bolean value if the Queue empty or not
-### the Big O is Big O Of(n)
+
 ### Stack
 #### `push()`
 - time: Big O Of(1)
