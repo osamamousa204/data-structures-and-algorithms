@@ -19,7 +19,7 @@ graduate 301 student has a knowlodge in js language
 6. `add(value)`: create a new node with the value then check if there is a root if not add the value in the root
 else itirate over the sub trees if the value geater than the node go to right else go left until the current reach the null value then add the nde to the parent if the value greater than the parent store on the right else store it on the left 
 7. `contains(value)`: itirate over the nodes starting from the root as same as add method and check if the current value of the node equals the input value
-
+8. `find_maximum_value()`: itirate over the nodes values from the root and check if the current node value is greater than the maxValue if true then max equal the current node value 
 ### the Big O is Big O Of(n)
 #### `preOrder()`
 - time: Big O Of(n)
@@ -36,9 +36,14 @@ else itirate over the sub trees if the value geater than the node go to right el
 #### `preOrder()`
 - time: Big O Of(n)
 - space: Big O Of(1)
+#### `find_maximum_value()`
+- time: Big O Of(n)
+- space: Big O Of(1)
 
+find_maximum_value
 board image -->
 
-![array-reverse](../../assets/tree.png)
+![tree](../../assets/tree.png)
+![max-value](../../assets/max.png)
 
 
