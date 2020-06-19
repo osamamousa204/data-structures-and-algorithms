@@ -1,4 +1,4 @@
-# Animal shelter
+# breadth_first traversal
 <!-- Short summary or background information -->
 graduate 301 student has a knowlodge in js language
 ## Challenge
