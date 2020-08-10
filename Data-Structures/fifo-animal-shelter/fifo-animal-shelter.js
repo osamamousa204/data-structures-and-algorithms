@@ -37,7 +37,7 @@ class AnimalShelter {
   dequeue(pref){
     if(pref){
       while(this.storage.length != 0){
-        this.peek();
+        
         if(this.peek().type === pref.type &&  this.peek().name === pref.name){
           return this.peek();
         }else{
